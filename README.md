@@ -55,6 +55,11 @@ delete '/users/:id'
 ![Screenshot (392)](https://user-images.githubusercontent.com/42229194/70316778-5aa1dc80-1857-11ea-863c-f8354e1d3d41.png)
 9194/70316603-0b5bac00-1857-11ea-84ec-cff7286b1a8a.png)
 
+Middleware API [RouterExplorer]
+
+![Screenshot (394)](https://user-images.githubusercontent.com/42229194/70317102-0cd9a400-1858-11ea-9134-729859c0e3c1.png)
+
+
 ## Installation
 
 ```bash
