@@ -59,6 +59,12 @@ Middleware API [RouterExplorer]
 ![Screenshot (394)](https://user-images.githubusercontent.com/42229194/70317102-0cd9a400-1858-11ea-9134-729859c0e3c1.png)
 
 
+### Criteria
+-	No internal errors when running the API or calling any of the routes
+- Mongo database URL should be easily configurable
+- Should run fine on Unix-like/Unix-based operating systems
+
+
 ## Installation
 
 ```bash
