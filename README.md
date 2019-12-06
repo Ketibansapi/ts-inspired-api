@@ -24,7 +24,7 @@
 
 # Users REST API
 
-A simple API to do CRUD users from mongodb using Nestjs framework in Typescript.
+A simple API to do CRUD users from mongodb using Nestjs framework in Typescript. Inpired-mobile assesstment.
 
 ## Setup Mongodb
 
