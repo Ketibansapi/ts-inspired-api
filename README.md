@@ -22,7 +22,7 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-# Users REST API
+# Nestjs REST API Typescript
 
 A simple API to do CRUD users from mongodb using Nestjs framework in Typescript. Inpired-mobile assesstment.
 
