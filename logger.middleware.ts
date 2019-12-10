@@ -3,14 +3,16 @@ import { Injectable, NestMiddleware } from '@nestjs/common';
 import { Request, Response } from 'express';
 
 @Injectable()
-export class LoggerMiddleware implements NestMiddleware {
+export class LoggerGetUsers implements NestMiddleware {
   use(req: Request, res: Response, next: Function) {
-    console.log('Requested to get all the users lists...');
+    console.log('[API Logger Middleware] Request: Get all the users lists, status: [200]');
     next();
   }
 };
 
-export function logger(req, res, next) {
-    console.log ('Request to get all the users...');
-    next()
+export class LoggerGetUserById implements NestMiddleware {
+  use(req: Request, res: Response, next: Function) {
+    console.log('[API Logger Middleware] Request: Get user find by ID, status: [200]');
+    next();
+  }
 };

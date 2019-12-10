@@ -1,5 +1,5 @@
 import { Module, NestModule, MiddlewareConsumer, RequestMethod } from '@nestjs/common';
-import { LoggerMiddleware, logger } from '../logger.middleware';
+import { LoggerGetUsers, LoggerGetUserById } from '../logger.middleware';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ItemsController } from './items/items.controller';
@@ -19,7 +19,7 @@ import config from './config/keys';
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
     consumer
-      .apply(logger)
+      .apply(LoggerGetUsers)
       .forRoutes({ path: 'users', method: RequestMethod.GET})
   }
 }
