@@ -6,7 +6,9 @@ import {
     Delete,
     Body,
     Param,
+    Req,
   } from '@nestjs/common';
+  import { Request } from 'express';
   import { CreateUserDto } from './dto/create-user.dto';
   import { UsersService } from './users.service';
   import { User } from './interfaces/user.interface';
@@ -16,7 +18,7 @@ import {
     constructor(private readonly usersService: UsersService) {}
   
     @Get()
-    findAll(): Promise<User[]> {
+    findAll(@Req() request: Request): Promise<User[]> {
       return this.usersService.findAll();
     }
   
